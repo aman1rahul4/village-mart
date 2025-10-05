@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Cart | Village Mart</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .navbar {
+            background: #111;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 24px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+
+        .logo-img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+
+                .navbar ul li a:hover,
+                .navbar ul li a.active {
+                    color: #7fff00;
+                }
+
+        .cart-section {
+            max-width: 900px;
+            margin: 50px auto;
+            background: #2a2a2a;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+
+            .cart-section h2 {
+                text-align: center;
+                margin-bottom: 30px;
+                text-shadow: 1px 1px 3px black;
+            }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #444;
+        }
+
+        th {
+            background-color: #3a3a3a;
+        }
+
+        td {
+            color: #ddd;
+        }
+
+        #cart-empty {
+            text-align: center;
+            color: #ccc;
+            margin-top: 20px;
+        }
+
+        .cart-summary {
+            text-align: right;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .checkout-btn {
+            display: block;
+            margin: 20px auto 0;
+            padding: 12px 30px;
+            background-color: #7fff00;
+            color: #000;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+            .checkout-btn:hover {
+                background-color: #6be000;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Village Mart" class="logo-img">
+            Village Mart
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="cart.html" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <section class="cart-section">
+        <h2>🛒 Your Cart</h2>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- JS fills cart rows -->
+            </tbody>
+        </table>
+
+        <div id="cart-empty" style="display:none;">Your cart is empty.</div>
+
+        <div class="cart-summary">
+            <span id="cart-subtotal">Subtotal: ₹0</span>
+        </div>
+
+        <button id="proceed-address-btn" class="checkout-btn">Proceed to Address</button>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart/cart.js"></script>
+
+</body>
+</html>

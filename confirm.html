@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Placed | Village Mart</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        .navbar {
+            background-color: #111;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 24px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+
+        .logo-img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+
+                .navbar ul li a:hover {
+                    color: #7fff00;
+                }
+
+        .order-confirm {
+            max-width: 600px;
+            margin: 80px auto;
+            background-color: #fff;
+            color: #111;
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+        }
+
+            .order-confirm h2 {
+                margin-bottom: 20px;
+                color: #28a745;
+                font-size: 26px;
+            }
+
+            .order-confirm p {
+                font-size: 18px;
+                line-height: 1.6;
+            }
+
+        .checkout-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background-color: #7fff00;
+            color: #111;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background 0.2s ease-in-out;
+        }
+
+            .checkout-btn:hover {
+                background-color: #6be000;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Village Mart" class="logo-img">
+            Village Mart
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <section class="order-confirm">
+        <h2>🎉 Order Placed Successfully!</h2>
+        <p>
+            Thank you for shopping at Village Mart.<br>
+            Your goodies are on the way!
+        </p>
+        <a href="index.html" class="checkout-btn">Home</a>
+    </section>
+
+    <script>
+        localStorage.removeItem('vm_cart');
+    </script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Village Mart | Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Village Mart" class="logo-img">
+            Village Mart
+        </div>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="cart.html" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" style="background-image: url('images/banner1.jpg');">
+        <div class="hero-content animate-fadein">
+            <h2>Welcome to Village Mart</h2>
+            <h1>Freshness & Essentials at Your Doorstep</h1>
+            <p>Groceries, products, and medicines — all in one place, directly from local sources.</p>
+        </div>
+    </header>
+
+    <section class="offer-section animate-slideup">
+        <h2>Weekly Offer</h2>
+        <div class="offer-card">
+            <img src="images/apple.jpg" alt="Offer Apple">
+            <div>
+                <h3>Buy 1kg Apple – Only ₹75 this week!</h3>
+                <p>Fresh Apples directly from local farms. Hurry up, offer valid until Sunday!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section animate-section">
+        <h2>🍎 Seasonal Fruits</h2>
+        <div class="products-gallery">
+            <div class="product-card animate-card">
+                <img src="images/apple.jpg" alt="Apple"><span>Apple</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹75/kg</span>
+                    <button class="add-cart-btn" data-id="apple" data-name="Apple" data-price="75" data-unit="kg">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card animate-card">
+                <img src="images/banana.jpg" alt="Banana"><span>Banana</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹40/dozen</span>
+                    <button class="add-cart-btn" data-id="banana" data-name="Banana" data-price="40" data-unit="dozen">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card animate-card">
+                <img src="images/mango.jpg" alt="Mango"><span>Mango</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹100/kg</span>
+                    <button class="add-cart-btn" data-id="mango" data-name="Mango" data-price="100" data-unit="kg">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card animate-card">
+                <img src="images/sugar.jpg" alt="Sugarcane"><span>Sugarcane</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹60/bundle</span>
+                    <button class="add-cart-btn" data-id="sugarcane" data-name="Sugarcane" data-price="60" data-unit="bundle">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section animate-section" style="--delay:.2s;">
+        <h2>🥦 Seasonal Vegetables</h2>
+        <div class="products-gallery">
+            <div class="product-card animate-card">
+                <img src="images/tomato.jpg" alt="Tomato"><span>Tomato</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹50/kg</span>
+                    <button class="add-cart-btn" data-id="tomato" data-name="Tomato" data-price="50" data-unit="kg">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card animate-card">
+                <img src="images/spinach.jpg" alt="Spinach"><span>Spinach</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹25/bundle</span>
+                    <button class="add-cart-btn" data-id="spinach" data-name="Spinach" data-price="25" data-unit="bundle">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card animate-card">
+                <img src="images/potato.jpg" alt="Potato"><span>Potato</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹35/kg</span>
+                    <button class="add-cart-btn" data-id="potato" data-name="Potato" data-price="35" data-unit="kg">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section animate-section" style="--delay:.4s;">
+        <h2>🛒 Grocery & Essentials</h2>
+        <div class="products-gallery">
+            <div class="product-card animate-card">
+                <img src="images/butter.jpg" alt="Butter"><span>Butter</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹60/100g</span>
+                    <button class="add-cart-btn" data-id="butter" data-name="Butter" data-price="60" data-unit="100g">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card animate-card">
+                <img src="images/milk.jpg" alt="Milk"><span>Milk</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹50/Litre</span>
+                    <button class="add-cart-btn" data-id="milk" data-name="Milk" data-price="50" data-unit="Litre">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card animate-card">
+                <img src="images/rice.jpg" alt="Rice"><span>Rice</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹55/kg</span>
+                    <button class="add-cart-btn" data-id="rice" data-name="Rice" data-price="55" data-unit="kg">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card animate-card">
+                <img src="images/biscuits.jpg" alt="Biscuits"><span>Biscuits</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹30/pack</span>
+                    <button class="add-cart-btn" data-id="biscuits" data-name="Biscuits" data-price="30" data-unit="pack">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card animate-card">
+                <img src="images/chips.jpg" alt="Chips"><span>Chips</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹20/pack</span>
+                    <button class="add-cart-btn" data-id="chips" data-name="Chips" data-price="20" data-unit="pack">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card animate-card">
+                <img src="images/detergent.jpg" alt="Detergent"><span>Detergent</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹65/500g</span>
+                    <button class="add-cart-btn" data-id="detergent" data-name="Detergent" data-price="65" data-unit="500g">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card animate-card">
+                <img src="images/oil.jpg" alt="Oil"><span>Oil</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹120/Litre</span>
+                    <button class="add-cart-btn" data-id="oil" data-name="Oil" data-price="120" data-unit="Litre">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section animate-section" style="--delay:.6s;">
+        <h2>💊 Medicines & Medical Essentials</h2>
+        <div class="products-gallery">
+            <div class="product-card animate-card">
+                <img src="images/paracetamol.jpg" alt="Paracetamol"><span>Paracetamol</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹15/strip</span>
+                    <button class="add-cart-btn" data-id="paracetamol" data-name="Paracetamol" data-price="15" data-unit="strip">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card animate-card">
+                <img src="images/soap.jpg" alt="Soap"><span>Soap</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹20/bar</span>
+                    <button class="add-cart-btn" data-id="soap" data-name="Soap" data-price="20" data-unit="bar">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card animate-card">
+                <img src="images/bandage.jpg" alt="Bandage"><span>Bandage</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹12/roll</span>
+                    <button class="add-cart-btn" data-id="bandage" data-name="Bandage" data-price="12" data-unit="roll">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card animate-card">
+                <img src="images/vaseline.jpg" alt="Vaseline"><span>Vaseline</span>
+                <div class="prod-details">
+                    <span class="prod-price">₹30/tube</span>
+                    <button class="add-cart-btn" data-id="vaseline" data-name="Vaseline" data-price="30" data-unit="tube">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="horizontal-footer">
+        <style>
+            .horizontal-footer {
+                background-color: #1a1a1a;
+                color: #fff;
+                padding: 30px 20px;
+                text-align: center;
+                font-family: Arial, sans-serif;
+            }
+
+            .footer-links {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 18px;
+                margin-bottom: 18px;
+            }
+
+                .footer-links a {
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: bold;
+                    transition: color 0.2s ease-in-out;
+                }
+
+                    .footer-links a:hover {
+                        color: #7fff00;
+                    }
+
+            .horizontal-footer p {
+                margin: 0;
+                font-size: 13px;
+                opacity: 0.8;
+            }
+        </style>
+
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="help.html">Help</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="vendor.html">Vendor Connect</a>
+        </div>
+        <p>© 2025 Village Mart Enterprises</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    
+<!--    <script src="js/home/home.js"></script>-->
+    <script src="js/login.js"></script>
+
+</body>
+</html>
