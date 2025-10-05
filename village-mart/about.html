@@ -1,0 +1,232 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>About | Village Mart</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1f1f1f, #2c2c2c);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        nav.navbar {
+            background-color: #111;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 24px;
+        }
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo img {
+            height: 30px;
+            margin-right: 8px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+                nav ul li a:hover,
+                nav ul li a.active {
+                    color: #7fff00;
+                }
+
+        .about-box {
+            max-width: 700px;
+            background: #2c2c2c;
+            margin: 60px auto;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+            .about-box h2, .about-box h3 {
+                color: #ffffff;
+                margin-bottom: 12px;
+                text-shadow: 1px 1px 3px black;
+            }
+
+            .about-box p {
+                line-height: 1.6;
+                font-size: 16px;
+                color: #dddddd;
+                margin-bottom: 20px;
+            }
+
+        .insta-links {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+            .insta-links a {
+                color: #7fff00;
+                text-decoration: none;
+                font-weight: bold;
+                background-color: #1a1a1a;
+                padding: 10px 15px;
+                border-radius: 8px;
+                display: inline-block;
+                transition: background 0.3s;
+            }
+
+                .insta-links a:hover {
+                    background-color: #333;
+                }
+
+        .team-section {
+            margin-top: 40px;
+        }
+
+        .team-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .member-card {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+            .member-card img {
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                border-radius: 10px;
+                border: 2px solid #444;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                cursor: pointer;
+            }
+
+                .member-card img:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 6px 20px rgba(127, 255, 0, 0.5);
+                }
+
+        .member-info h4 {
+            margin: 0 0 6px 0;
+            font-size: 18px;
+            color: #7fff00;
+        }
+
+        .member-info p {
+            margin: 2px 0;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 16px;
+            color: white;
+            background-color: #111;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Village Mart" />
+            Village Mart
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="about-box">
+        <h2>🛒 About Village Mart</h2>
+        <p><strong>Village Mart</strong> is a small initiative started by three of us — <strong>Dhiraj Kumar</strong>, <strong>Priya Kumari</strong>, and <strong>Aman Kumar</strong>.</p>
+
+        <p>Our goal is simple: to make everyday products affordable and accessible for everyone in the village — rich or poor, it shouldn’t matter.</p>
+
+        <p>We’ve seen how hard it is for people in villages to get good quality items at fair prices. Either the products don’t reach them, or they’re just too expensive. That’s exactly what we’re trying to change.</p>
+
+        <p>At Village Mart, you’ll find all essential goods at reasonable, fair prices — no middlemen, no unnecessary markups.</p>
+
+        <h3>🚀 Our Mission</h3>
+        <p>We’re building this platform with one mission: to make life in the village better, step by step. We want Village Mart to be more than just a shop — we want it to be a part of the village's growth.</p>
+
+        <p>As we move forward, we plan to invest more into expanding our services, bringing even more useful products and support directly to rural communities — slowly but surely.</p>
+
+        <!-- 👥 Team Members Section -->
+        <div class="team-section">
+            <h3>👥 Our Team</h3>
+            <div class="team-grid">
+                <div class="member-card">
+                    <img src="images/dhiraj.jpg" alt="Dhiraj Kumar">
+                    <div class="member-info">
+                        <h4>Dhiraj Kumar</h4>
+                        <p>📍 Ranchi, Jharkhand</p>
+                        <p>🎓 MCA - Ranchi University</p>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <img src="images/priya.jpg" alt="Priya Kumari">
+                    <div class="member-info">
+                        <h4>Priya Kumari</h4>
+                        <p>📍 Simdega, Jharkhand</p>
+                        <p>🎓 MCA - Ranchi University</p>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <img src="images/aman.jpg" alt="Aman Kumar">
+                    <div class="member-info">
+                        <h4>Aman Kumar</h4>
+                        <p>📍 Ranchi, Jharkhand</p>
+                        <p>🎓 MCA - Ranchi University</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="insta-links">
+            <a href="https://www.instagram.com/mr_incredible__13?igsh=bTluOGlnenUwOHpx" target="_blank">📷 Dhiraj Kumar on Instagram</a>
+            <a href="https://www.instagram.com/priyakumari6214?igsh=eHAxMGV2N254Z2Yy" target="_blank">📷 Priya Kumari on Instagram</a>
+            <a href="https://www.instagram.com/kumar1_aman4?igsh=anNkMGQ5cHZ5OXN6" target="_blank">📷 Aman Kumar on Instagram</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Village Mart
+    </footer>
+
+</body>
+</html>

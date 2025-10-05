@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment | Village Mart</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        .navbar {
+            background-color: #111;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 24px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+
+        .logo-img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+            .navbar ul li a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+
+                .navbar ul li a:hover {
+                    color: #7fff00;
+                }
+
+        .payment-section {
+            max-width: 600px;
+            margin: 60px auto;
+            background-color: #fff;
+            color: #111;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+
+            .payment-section h2 {
+                text-align: center;
+                margin-bottom: 25px;
+                text-shadow: 1px 1px 3px #ccc;
+            }
+
+        #payment-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            font-size: 16px;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #f7f7f7;
+            padding: 12px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            transform: scale(1.2);
+        }
+
+        .checkout-btn {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #7fff00;
+            color: #111;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.2s ease-in-out;
+        }
+
+            .checkout-btn:hover {
+                background-color: #6be000;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Village Mart" class="logo-img">
+            Village Mart
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <section class="payment-section">
+        <h2>Payment</h2>
+        <form id="payment-form">
+            <label>
+                <input type="radio" name="paymethod" value="cod" checked>
+                Cash on Delivery
+            </label>
+            <label>
+                <input type="radio" name="paymethod" value="upi">
+                UPI
+            </label>
+            <label>
+                <input type="radio" name="paymethod" value="card">
+                Credit/Debit Card
+            </label>
+            <button type="submit" class="checkout-btn">Place Order</button>
+        </form>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
