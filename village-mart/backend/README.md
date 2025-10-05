@@ -1,1 +1,0 @@
-# Village Mart Backend Project
